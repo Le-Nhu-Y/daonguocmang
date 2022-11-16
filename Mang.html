@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //let hung = [2,7,1,4,8,3,2,5,10,15,18];
+    //for(let i = 0;i<hung.length;i++){
+    //   document.write('<h1>'+hung[i]+'</h1>') // in ra phần thử trong thẻ h1
+
+    // for(let i = 0;i<hung.length;i++) {
+    // if (i % 3 === 0)
+    //    document.write('<h1>' + hung[i] + '</h1>') // in ra phần tử chia hết cho 3
+
+    //for(let i = 0;i<hung.length;i++) {
+    // if (i%3=== 0)
+    //  document.write('<h3>' + hung[i] + '</h3>') // in ra phần tử chia hết cho 3
+    //  if (hung[i]%3===0 & hung[i]%5===0)
+    //    document.write('<h2>' + hung[i] + '</h2>') // in ra phần tử chia hết cho 5
+    // }
+    // Tính tổng các phần tử trong mảng:
+    // let hung = [2,7,1,4,8,3,2,5,10,15,18];
+    // let total =0
+    // for(let i=0;i<hung.length;i++){
+    //   total+=hung[i]
+    //   total*=hung[i]
+    //  }
+    //  document.write('Tổng là : '+ total)
+    //  document.write('Tích là : '* total)
+    // Đếm chẵn
+    let hung = [2, 7, 1, 4, 8, 3, 2, 5, 10, 15, 18];
+    let y = 0;
+    for (let i = 0; i < hung.length; i++) {
+        if (hung[i] % 2 == 0) {
+            y++;
+        }
+    }
+    document.write('Số phần tử chẵn là:' + y);
+
+    // Tính trung bình các phần tử chẵn
+
+    let hung = [2, 7, 1, 4, 8, 3, 2, 5, 10, 15, 18];
+    let y = 0;
+    let tong = 0
+    for (let i = 0; i < hung.length; i++) {
+        if (hung[i] % 2 == 0) {
+            y++;
+        }
+        tong += hung[i];
+    }
+    }
+    document.write('Số phần tử chẵn là:' + tong / y);
+    // Tìm max trong mảng
+    let hung = [2, 7, 1, 4, 8, 3, 2, 5, 10, 15, 18];
+    let max = hung[0];
+    for (let i = 0; i < hung.length; i++) {
+        if (hung[i] > max) {
+            max = hung[i];
+        }
+    }
+    document.write('Phần tử max là: ' + max);
+    // Nhập vào a, tìm vị trí a trong mảng.
+    let a = prompt("Nhập số vào đây:")
+    let hung = [2, 7, 1, 4, 8, 3, 2, 5, 10, 15, 18];
+    let vitri
+    for (let i = 0; i < hung.length; i++){
+        if (hung[i] ==a){
+            vitri=i;
+        }
+    }
+    if (a = hung[i]) {
+        document.write("Vị trí a trong mảng là "+ vitri)
+    }
+</script>
+</body>
+</html>
